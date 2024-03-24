@@ -72,7 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'bag.contexts.bag_contents', #allows access to bag contents across all templates
+                'bag.contexts.bag_contents',
             ],
         },
     },
@@ -110,8 +110,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 
 # Password validation
